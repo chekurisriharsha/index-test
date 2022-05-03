@@ -3,4 +3,5 @@
     <filter root="/apps/emeageneralsandbox/clientlibs"/>
     <filter root="/apps/emeageneralsandbox/components"/>
     <filter root="/apps/emeageneralsandbox/i18n"/>
+    <filter root="/oak:index/damAssetLucene-7-custom-1"/>
 </workspaceFilter>

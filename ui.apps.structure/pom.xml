@@ -29,6 +29,7 @@
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <configuration>
+                    <allowIndexDefinitions>true</allowIndexDefinitions>
                     <properties>
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
@@ -50,6 +51,7 @@
                         <!-- DAM folder root, will be created via repoinit -->
                         <filter><root>/content/dam/emeageneralsandbox</root></filter>
 
+                        <filter><root>/oak:index</root></filter>
                     </filters>
                 </configuration>
             </plugin>

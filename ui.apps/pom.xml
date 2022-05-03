@@ -54,6 +54,8 @@
                     <group>com.emeageneralsandbox3</group>
                     <name>aem-emeageneralsandbox3-project.ui.apps</name>
                     <packageType>application</packageType>
+                    <allowIndexDefinitions>true</allowIndexDefinitions>
+                    <noIntermediateSaves>true</noIntermediateSaves>
                     <repositoryStructurePackages>
                         <repositoryStructurePackage>
                             <groupId>com.emeageneralsandbox3</groupId>
@@ -62,7 +64,21 @@
                     </repositoryStructurePackages>
                     <dependencies>
                     </dependencies>
+                      <validatorsSettings>
+                        <jackrabbit-packagetype>
+                            <options>
+                                <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+                            </options>
+                        </jackrabbit-packagetype>
+                    </validatorsSettings>
                 </configuration>
+                 <dependencies>
+                    <dependency>
+                        <groupId>org.apache.jackrabbit.vault</groupId>
+                        <artifactId>vault-validation</artifactId>
+                        <version>3.5.6</version>
+                    </dependency>
+                </dependencies>
             </plugin>
             <plugin>
                 <groupId>com.day.jcr.vault</groupId>
